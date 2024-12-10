@@ -25,7 +25,7 @@ app.use(express.json());
 // Route files
 
 // authRoutes Step 2: import the authRoutes and store in a constant called authRoutes
-//{{insert code here}}
+const authRoutes = require('./routes/authRoutes');
 
 // Items API Task 1: import the secondChanceItemsRoutes and store in a constant called secondChanceItemsRoutes
 
@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Use Routes
 // authRoutes Step 2: add the authRoutes and to the server by using the app.use() method.
-//{{insert code here}}
+app.use('/api/auth', authRoutes);
 
 // Items API Task 2: add the secondChanceItemsRoutes to the server by using the app.use() method.
 
