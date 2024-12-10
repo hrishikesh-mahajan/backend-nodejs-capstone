@@ -1,0 +1,16 @@
+{
+  "name": "secondchancewebsite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "postbuild": "cp -r build ../secondchancewebsite/"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.0.1",
+    "cors": "^2.8.5"
+  }
+}
